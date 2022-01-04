@@ -1,8 +1,7 @@
 package ticket.service;
 
-import ticket.model.Movie;
-
 import java.util.List;
+import ticket.model.Movie;
 
 public interface MovieService {
     Movie add(Movie movie);

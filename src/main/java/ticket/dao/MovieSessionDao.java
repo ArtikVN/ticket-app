@@ -1,10 +1,9 @@
 package ticket.dao;
 
-import ticket.model.MovieSession;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import ticket.model.MovieSession;
 
 public interface MovieSessionDao {
     List<MovieSession> findAvailableSessions(Long movieId, LocalDate date);

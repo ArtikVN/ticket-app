@@ -1,9 +1,8 @@
 package ticket.dao;
 
-import ticket.model.CinemaHall;
-
 import java.util.List;
 import java.util.Optional;
+import ticket.model.CinemaHall;
 
 public interface CinemaHallDao {
     CinemaHall add(CinemaHall cinemaHall);

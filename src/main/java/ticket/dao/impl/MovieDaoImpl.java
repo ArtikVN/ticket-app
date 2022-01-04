@@ -1,16 +1,15 @@
 package ticket.dao.impl;
 
+import java.util.List;
+import java.util.Optional;
+import javax.persistence.criteria.CriteriaQuery;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import ticket.dao.MovieDao;
 import ticket.exception.DataProcessingException;
 import ticket.lib.Dao;
 import ticket.model.Movie;
 import ticket.util.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-
-import javax.persistence.criteria.CriteriaQuery;
-import java.util.List;
-import java.util.Optional;
 
 @Dao
 public class MovieDaoImpl implements MovieDao {

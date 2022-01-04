@@ -1,9 +1,8 @@
 package ticket.service;
 
-import ticket.model.MovieSession;
-
 import java.time.LocalDate;
 import java.util.List;
+import ticket.model.MovieSession;
 
 public interface MovieSessionService {
     List<MovieSession> findAvailableSessions(Long movieId, LocalDate date);

@@ -1,14 +1,22 @@
 package ticket;
 
-import ticket.exception.AuthenticationException;
-import ticket.lib.Injector;
-import ticket.model.*;
-import ticket.security.AuthenticationService;
-import ticket.service.*;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import ticket.exception.AuthenticationException;
+import ticket.lib.Injector;
+import ticket.model.CinemaHall;
+import ticket.model.Movie;
+import ticket.model.MovieSession;
+import ticket.model.Order;
+import ticket.model.ShoppingCart;
+import ticket.model.User;
+import ticket.security.AuthenticationService;
+import ticket.service.CinemaHallService;
+import ticket.service.MovieService;
+import ticket.service.MovieSessionService;
+import ticket.service.OrderService;
+import ticket.service.ShoppingCartService;
 
 public class Main {
     private static final Injector injector = Injector.getInstance("ticket");

@@ -1,13 +1,12 @@
 package ticket.service.impl;
 
+import java.util.Optional;
 import ticket.dao.UserDao;
 import ticket.lib.Inject;
 import ticket.lib.Service;
 import ticket.model.User;
 import ticket.service.UserService;
 import ticket.util.HashUtil;
-
-import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {

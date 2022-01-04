@@ -1,9 +1,8 @@
 package ticket.dao;
 
-import ticket.model.Movie;
-
 import java.util.List;
 import java.util.Optional;
+import ticket.model.Movie;
 
 public interface MovieDao {
     Movie add(Movie movie);

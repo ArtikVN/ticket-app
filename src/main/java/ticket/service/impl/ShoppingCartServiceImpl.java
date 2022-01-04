@@ -1,5 +1,6 @@
 package ticket.service.impl;
 
+import java.util.ArrayList;
 import ticket.dao.ShoppingCartDao;
 import ticket.dao.TicketDao;
 import ticket.lib.Inject;
@@ -9,8 +10,6 @@ import ticket.model.ShoppingCart;
 import ticket.model.Ticket;
 import ticket.model.User;
 import ticket.service.ShoppingCartService;
-
-import java.util.ArrayList;
 
 @Service
 public class ShoppingCartServiceImpl implements ShoppingCartService {

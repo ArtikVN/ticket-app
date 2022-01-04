@@ -1,8 +1,7 @@
 package ticket.service;
 
-import ticket.model.User;
-
 import java.util.Optional;
+import ticket.model.User;
 
 public interface UserService {
     User add(User user);

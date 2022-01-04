@@ -1,12 +1,11 @@
 package ticket.service.impl;
 
+import java.util.List;
 import ticket.dao.CinemaHallDao;
 import ticket.lib.Inject;
 import ticket.lib.Service;
 import ticket.model.CinemaHall;
 import ticket.service.CinemaHallService;
-
-import java.util.List;
 
 @Service
 public class CinemaHallServiceImpl implements CinemaHallService {

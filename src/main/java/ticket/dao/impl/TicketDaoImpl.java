@@ -1,12 +1,12 @@
 package ticket.dao.impl;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import ticket.dao.TicketDao;
 import ticket.exception.DataProcessingException;
 import ticket.lib.Dao;
 import ticket.model.Ticket;
 import ticket.util.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 @Dao
 public class TicketDaoImpl implements TicketDao {

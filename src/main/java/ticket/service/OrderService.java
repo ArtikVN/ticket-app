@@ -1,10 +1,9 @@
 package ticket.service;
 
+import java.util.List;
 import ticket.model.Order;
 import ticket.model.ShoppingCart;
 import ticket.model.User;
-
-import java.util.List;
 
 public interface OrderService {
     Order completeOrder(ShoppingCart shoppingCart);

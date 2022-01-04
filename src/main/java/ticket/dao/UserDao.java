@@ -1,8 +1,7 @@
 package ticket.dao;
 
-import ticket.model.User;
-
 import java.util.Optional;
+import ticket.model.User;
 
 public interface UserDao {
     User add(User user);

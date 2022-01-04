@@ -1,8 +1,7 @@
 package ticket.service;
 
-import ticket.model.CinemaHall;
-
 import java.util.List;
+import ticket.model.CinemaHall;
 
 public interface CinemaHallService {
     CinemaHall add(CinemaHall cinemaHall);

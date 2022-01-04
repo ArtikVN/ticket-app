@@ -1,5 +1,6 @@
 package ticket.security;
 
+import java.util.Optional;
 import ticket.exception.AuthenticationException;
 import ticket.lib.Inject;
 import ticket.lib.Service;
@@ -7,8 +8,6 @@ import ticket.model.User;
 import ticket.service.ShoppingCartService;
 import ticket.service.UserService;
 import ticket.util.HashUtil;
-
-import java.util.Optional;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
