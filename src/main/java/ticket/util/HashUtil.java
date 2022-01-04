@@ -7,7 +7,10 @@ import java.security.SecureRandom;
 public class HashUtil {
     public static final String HASH_ALGORITHM = "SHA-512";
 
-    public static String hashPassword(String password, byte[] salt) {
+    private HashUtil() {
+    }
+
+    public static String hashedPassword(String password, byte[] salt) {
         StringBuilder hashedPwd = new StringBuilder();
         try {
             MessageDigest messageDigest = MessageDigest.getInstance(HASH_ALGORITHM);
