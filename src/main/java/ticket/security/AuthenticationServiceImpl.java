@@ -36,7 +36,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private boolean matchPasswords(String rawPassword, User userFromDb) {
-        String hashedPassword = HashUtil.hashedPassword(rawPassword, userFromDb.getSalt());
+        String hashedPassword = HashUtil.hashPassword(rawPassword, userFromDb.getSalt());
         return hashedPassword.equals(userFromDb.getPassword());
     }
 }

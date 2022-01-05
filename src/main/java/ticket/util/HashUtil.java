@@ -10,16 +10,16 @@ public class HashUtil {
     private HashUtil() {
     }
 
-    public static String hashedPassword(String password, byte[] salt) {
-        StringBuilder hashedPwd = new StringBuilder();
+    public static String hashPassword(String password, byte[] salt) {
+        StringBuilder hashedPassword = new StringBuilder();
         try {
             MessageDigest messageDigest = MessageDigest.getInstance(HASH_ALGORITHM);
             messageDigest.update(salt);
             byte[] digest = messageDigest.digest(password.getBytes());
             for (byte b : digest) {
-                hashedPwd.append(String.format("%02x", b));
+                hashedPassword.append(String.format("%02x", b));
             }
-            return hashedPwd.toString();
+            return hashedPassword.toString();
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException("Can`t hash password!", e);
         }
