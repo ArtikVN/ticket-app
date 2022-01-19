@@ -2,18 +2,18 @@
 
 
 
-###Objective of the project:
+### Objective of the project:
 * Practice building Java applications using Spring and Hibernate.
 * Simulation of simple cinema functionality
 
-###Basic functionality:
+### Basic functionality:
 * User Registration
 * User authentication and authorization
 * View availability of sessions
 * User Cart
 * Placement of an order by the user
 
-###Technologies used to create the application:
+### Technologies used to create the application:
 * Java 11
 * MySQL
 * Hibernate
@@ -21,13 +21,14 @@
 * Apache Tomcat (to run app locally)
 * Maven Checkstyle Plugin
 
-###Required to run the application:
+### Required to run the application:
 * configure TomCat
 * In the DataInitializer, add your login details as an administrator
 * In the db.properties file, configure the connection to the database
-#####Application is ready to go
+##### Application is ready to go
 
 What requests can the user make:
+
 ```GET: /cinema-halls``` — display all the cinema halls<br>
 ```GET: /movies``` — display all the movies we have<br>
 ```GET: /movie-sessions/available``` — display all the available movie sessions<br>
@@ -37,6 +38,7 @@ What requests can the user make:
 ```GET: /shopping-carts/by-user``` — display the contents of the currently logged user's shopping cart<br>
 
 What requests can an administrator make:
+
 ```GET: /users/by-email``` — find user by email<br>
 ```POST: /cinema-halls```— add new cinema hall<br>
 ```POST: /movies```— add new movie<br>
